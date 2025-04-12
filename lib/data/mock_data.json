@@ -1,0 +1,28 @@
+{
+  "nohas": [
+    {
+      "title": "سلام فرمانده",
+      "reciter": "ابراهیم قاسم‌پور",
+      "image": "assets/images/noha1.jpg"
+    },
+    {
+      "title": "ای اهل حرم",
+      "reciter": "میثم مطیعی",
+      "image": "assets/images/noha2.jpg"
+    }
+  ],
+  "announcements": [
+    {
+      "title": "مراسم فردا ساعت ۲۰:۰۰",
+      "description": "در حسینیه مرکزی"
+    },
+    {
+      "title": "ثبت‌نام دسته‌ عزاداری",
+      "description": "مهلت ثبت‌نام تا شنبه"
+    }
+  ],
+  "next_adhan": {
+    "time": "18:30",
+    "city": "تهران"
+  }
+}
