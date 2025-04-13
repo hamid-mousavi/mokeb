@@ -8,23 +8,21 @@ class AdhanCubit extends Cubit<AdhanState> {
   final LocationService locationService;
   final AdhanService azanService;
 
-  AdhanCubit(this.locationService, this.azanService)
-      : super(AdhanLoading());
+  AdhanCubit(this.locationService, this.azanService) : super(AdhanLoading());
 
   Future<void> loadAdhanTimes() async {
     try {
       emit(AdhanLoading());
       final position = await locationService.getCurrentLocation();
-      final times =
-          await azanService.getPrayerTimes(position.latitude, position.longitude);
-      emit(AdhanLoaded(times));
+      final cityName = await LocationService.getCityName(position);
+      final times = await azanService.getPrayerTimes(
+          position.latitude, position.longitude);
+      emit(AdhanLoaded(times: times, cityName: cityName));
     } catch (e) {
       emit(AdhanError(e.toString()));
     }
   }
 }
-
-
 
 abstract class AdhanState {}
 
@@ -34,7 +32,9 @@ class AdhanLoading extends AdhanState {}
 
 class AdhanLoaded extends AdhanState {
   final PrayerTimeModel times;
-  AdhanLoaded(this.times);
+  final String cityName;
+
+  AdhanLoaded({required this.times, required this.cityName});
 }
 
 class AdhanError extends AdhanState {

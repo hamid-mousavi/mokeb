@@ -54,14 +54,14 @@ class AdhanBox extends StatelessWidget {
                   );
                 } else if (state is AdhanLoaded) {
                   final nextAzan = getNextAzan(state.times);
-
+                  final adhanState = state as AdhanLoaded;
                   return Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      Text(adhanState.cityName.toString()),
                       Text(
                         "${nextAzan.name}: ${DateFormat.Hm().format(nextAzan.time)}",
-                        style: const TextStyle(
-                             fontSize: 14,fontFamily: 'VazirMatn'),
+                        style: const TextStyle(fontSize: 14),
                       ),
                       SizedBox(
                         width: 2,
