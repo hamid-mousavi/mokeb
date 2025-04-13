@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mokeb/bloc/song/audio_bloc.dart';
 import 'package:mokeb/screens/song_screen.dart';
 import '../models/noha.dart';
 
@@ -10,14 +12,25 @@ class NohaCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => Navigator.of(context, rootNavigator: true).push(
-        MaterialPageRoute(
-            builder: (context) => SongScreen(
-                audioUrl: noha.url,
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => MultiBlocProvider(
+              providers: [
+                BlocProvider(
+                    create: (_) => AudioBloc()..add(InitAudio(noha.url))),
+                BlocProvider(create: (_) => AudioBloc()),
+              ],
+              child: SongScreen(
                 title: noha.title,
                 artist: noha.reciter,
-                coverImage: noha.image)),
-      ),
+                coverImage: noha.image,
+                audioUrl: noha.url,
+              ),
+            ),
+          ),
+        );
+      },
       child: Container(
         width: 160,
         margin: const EdgeInsets.only(right: 12),
