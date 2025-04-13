@@ -8,10 +8,12 @@ environment:
 
 dependencies:
   bloc: ^9.0.0
+  cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.0
   google_fonts: ^6.2.1
+  just_audio: ^0.9.46
 
 dev_dependencies:
   flutter_test:

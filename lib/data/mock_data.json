@@ -2,19 +2,71 @@
   "nohas": [
     {
       "title": "سلام فرمانده",
-      "reciter": "ابراهیم قاسم‌پور",
+      "id": "1",
+      "description": "",
+      "duration": 3.0,
+      "url": "https://irsv.upmusics.com/99/Mehdi%20Rasooli%20%7C%20Allaho%20Akbar%20(128).mp3",
+      "reciter": "",
       "image": "assets/images/noha1.jpg"
     },
     {
-      "title": "ای اهل حرم",
-      "reciter": "میثم مطیعی",
-      "image": "assets/images/noha2.jpg"
+      "title": "سلام فرمانده",
+      "id": "2",
+      "duration": 3.0,
+
+      "description": "",
+      "url": "https://irsv.upmusics.com/99/Mehdi%20Rasooli%20%7C%20Allaho%20Akbar%20(128).mp3",
+      "reciter": "",
+      "image": "assets/images/noha1.jpg"
+    },
+    {
+      "title": "سلام فرمانده",
+      "id": "3",
+      "description": "",
+      "duration": 3.0,
+
+      "url": "https://irsv.upmusics.com/99/Mehdi%20Rasooli%20%7C%20Allaho%20Akbar%20(128).mp3",
+      "reciter": "",
+      "image": "assets/images/noha1.jpg"
+    },
+    {
+      "title": "سلام فرمانده",
+      "id": "4",
+      "description": "",
+      "duration": 3.0,
+
+      "url": "https://irsv.upmusics.com/99/Mehdi%20Rasooli%20%7C%20Allaho%20Akbar%20(128).mp3",
+      "reciter": "",
+      "image": "assets/images/noha1.jpg"
+    },
+    {
+      "title": "سلام فرمانده",
+      "id": "5",
+      "description": "",
+      "duration": 3.0,
+
+      "url": "https://irsv.upmusics.com/99/Mehdi%20Rasooli%20%7C%20Allaho%20Akbar%20(128).mp3",
+      "reciter": "",
+      "image": "assets/images/noha1.jpg"
     }
+    
   ],
   "announcements": [
     {
       "title": "مراسم فردا ساعت ۲۰:۰۰",
       "description": "در حسینیه مرکزی"
+    },
+    {
+      "title": "ثبت‌نام دسته‌ عزاداری",
+      "description": "مهلت ثبت‌نام تا شنبه"
+    },
+    {
+      "title": "ثبت‌نام دسته‌ عزاداری",
+      "description": "مهلت ثبت‌نام تا شنبه"
+    },
+    {
+      "title": "ثبت‌نام دسته‌ عزاداری",
+      "description": "مهلت ثبت‌نام تا شنبه"
     },
     {
       "title": "ثبت‌نام دسته‌ عزاداری",

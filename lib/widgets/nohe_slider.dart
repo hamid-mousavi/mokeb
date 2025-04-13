@@ -14,18 +14,22 @@ class NoheSlider extends StatelessWidget {
       children: [
         const Text(
           "نوحه‌های روز",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+          style: TextStyle(
+              fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         const SizedBox(height: 12),
         SizedBox(
           height: 180,
           child: ListView.separated(
+            physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             itemCount: noheList.length,
             separatorBuilder: (context, index) => const SizedBox(width: 12),
             itemBuilder: (context, index) {
               final nohe = noheList[index];
-              return NohaCard(noha: nohe,);
+              return NohaCard(
+                noha: nohe,
+              );
             },
           ),
         ),
