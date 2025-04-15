@@ -48,7 +48,7 @@ class DataService {
 
   Future<Map<String, dynamic>> _loadJson() async {
     final String response =
-        await rootBundle.loadString('lib/data/mock_data.json');
+        await rootBundle.loadString('assets/data/mock_data.json');
     return json.decode(response);
   }
 }

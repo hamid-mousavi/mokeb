@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mokeb/models/announcement.dart';
+import 'package:mokeb/screens/all_announcements_page.dart';
 
 class AnnouncementsList extends StatelessWidget {
   final List<Announcement> announcements;
@@ -21,6 +22,7 @@ class AnnouncementsList extends StatelessWidget {
             TextButton(
               onPressed: () {
                 // TODO: رفتن به صفحه اطلاعیه‌ها
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => AllAnnouncementsPage(),));
               },
               child: const Text("مشاهده همه", style: TextStyle(color: Colors.white70)),
             )
